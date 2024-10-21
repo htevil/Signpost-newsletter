@@ -52,7 +52,7 @@
         }
 
         .heading {
-            font-size: 32px;
+            font-size: 38px;
             font-weight: 1000;
             letter-spacing: 1px;
             color: #AC045C;
@@ -72,7 +72,7 @@
         }
 
         #s1-img1 {
-            width: 45%;
+            width: 40%;
             min-width: 200px;
         }
 
@@ -86,15 +86,24 @@
             text-align: justify;
         }
 
-        #s1-heading2 {
+        #s1-heading1, #s1-heading2 {
             margin-top: 5px;
             align-self: flex-start;
             line-height: 0.8;
         }
 
-        #s1-para {
+        .s1-hea{
+            align-self: flex-start;
+            position: relative;
+            right: 85px
+        }
+
+        #s1-par{
             width: 100%;
             text-align: justify;
+            position: relative;
+            top: -35px;
+            left: 15px;
         }
 
         #line {
@@ -260,10 +269,6 @@
             width: 90%;
         }
 
-        #s8 {
-            padding: 0px;
-        }
-
         .s8-c1 {
             background-color: #AC045C;
             border-radius: 30px;
@@ -354,12 +359,24 @@
                 flex-direction: column;
             }
 
+
             #s1-img1 {
                 width: 60%;
             }
 
             .s1-sc1 {
                 width: 80%;
+            }
+
+            .s1-hea{
+                position: none;
+                right: 0;
+            }
+
+            #s1-par{
+                position: none;
+                top: 0;
+                left: 0;
             }
 
             #line{
@@ -442,14 +459,16 @@
             <div class="s1-c1">
                 <img src="./asset/s1-img1.png" alt="s1-img1" id="s1-img1">
                 <div class="s1-sc1">
-                    <h1 class="heading" id="s1-heading2">DIRECTOR'S DESK</h1>
+                    <div class="s1-hea">
+                        <h1 class="heading" id="s1-heading1">DIRECTOR'S</h1>
+                        <h1 class="heading" id="s1-heading2">DESK</h1>
+                    </div>
                     <div id="s1-par">
-                        <p>
-                            Growing is not only a destination but a journey of constant evolution and learning as
-                            we traverse the always changing environment of our chosen field. We at Signpost India
-                            follow the philosophy that real growth comes from our capacity to welcome change and
-                            never give up on our pursuit of excellence. Every advancement is a tribute to our
-                            group's vision and fortitude, which are fostered by our never ending search for new and
+                        <p>Growing is not only a destination but a journey 
+                            of constant evolution and learning aswe traverse the always changing environment of our chosen 
+                            field. We at Signpost India follow the philosophy that real growth comes from our capacity to 
+                            welcome change and never give up on our pursuit of excellence. Every advancement is a tribute 
+                            to our group's vision and fortitude, which are fostered by our never ending search for new and
                             improved ideas.
                         </p>
                         <br>
@@ -550,7 +569,7 @@
             </div>
         </section>
         <section id="s7">
-            <h1 class="heading">The SPOTLIGHT HONORS</h1>
+            <h1 class="heading">THE SPOTLIGHT HONORS</h1>
             <img src="./asset/s7-img1.png" alt="s7-img1" id="s7-img1">
         </section>
         <section id="s8">
@@ -599,8 +618,7 @@
                     <br />
                     <p class="s9-sh3">Thank you:</p>
                     <p class="s9-sh3">I am grateful for the opportunities and experiences I have gained at Signpost. The
-                        company's
-                        culture of growth, innovation, and collaboration has made it a truly rewarding place to work.
+                        company's culture of growth, innovation, and collaboration has made it a truly rewarding place to work.
                     </p>
                 </div>
 
