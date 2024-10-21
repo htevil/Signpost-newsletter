@@ -5,14 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Newsletter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
     <style type="text/css">
         * {
             margin: 0%;
             padding: 0%;
             box-sizing: border-box;
-            font-family: 'Roboto';
+            font-family: "Nunito", sans-serif;
             font-size: 12px;
-            font-weight: 600;
+            font-weight: 800;
             line-height: 1.15;
         }
 
@@ -52,9 +62,10 @@
         }
 
         .heading {
-            font-size: 38px;
-            font-weight: 1000;
-            letter-spacing: 1px;
+            font-family: "Oswald", sans-serif;
+            font-size: 40px;
+            letter-spacing: 2px;
+            font-weight: 700;
             color: #AC045C;
         }
 
@@ -72,8 +83,9 @@
         }
 
         #s1-img1 {
-            width: 40%;
+            width: 45%;
             min-width: 200px;
+            z-index: 100;
         }
 
         .s1-sc1 {
@@ -86,24 +98,24 @@
             text-align: justify;
         }
 
-        #s1-heading1, #s1-heading2 {
+        #s1-heading1,
+        #s1-heading2 {
             margin-top: 5px;
             align-self: flex-start;
             line-height: 0.8;
         }
 
-        .s1-hea{
+        .s1-hea {
             align-self: flex-start;
             position: relative;
-            right: 85px
+            right: 90px
         }
 
-        #s1-par{
+        #s1-par {
             width: 100%;
             text-align: justify;
             position: relative;
             top: -35px;
-            left: 15px;
         }
 
         #line {
@@ -121,6 +133,7 @@
 
         #s2-heading {
             font-size: 45px;
+            letter-spacing: 8px;
         }
 
         #s2-img1,
@@ -164,7 +177,7 @@
             gap: 25%;
         }
 
-        .s3-subheading{
+        .s3-subheading {
             font-size: 18px;
         }
 
@@ -269,6 +282,10 @@
             width: 90%;
         }
 
+        #s8 {
+            padding: 20px;
+        }
+
         .s8-c1 {
             background-color: #AC045C;
             border-radius: 30px;
@@ -276,7 +293,8 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            padding: 30px;
+            gap: 10px;
+            padding: 20px;
         }
 
         #s8-heading {
@@ -342,7 +360,6 @@
 
         .s9-sh3 {
             font-size: 12.5px;
-            font-weight: 500;
             color: #AC045C;
         }
 
@@ -351,8 +368,12 @@
                 padding: 20px;
             }
 
-            #header_img{
+            #header_img {
                 width: 100%;
+            }
+
+            .heading {
+                font-size: 26px;
             }
 
             .s1-c1 {
@@ -368,18 +389,18 @@
                 width: 80%;
             }
 
-            .s1-hea{
+            .s1-hea {
                 position: none;
                 right: 0;
             }
 
-            #s1-par{
+            #s1-par {
                 position: none;
                 top: 0;
                 left: 0;
             }
 
-            #line{
+            #line {
                 margin-top: 5px;
             }
 
@@ -387,16 +408,8 @@
                 font-size: 20px;
             }
 
-            .s3-subheading{
+            .s3-subheading {
                 font-size: 14px;
-            }
-
-            #s4-heading {
-                font-size: 24px;
-            }
-
-            #s5-heading {
-                font-size: 24px;
             }
 
             #s5-subheading1 {
@@ -412,7 +425,7 @@
             }
 
             #s6-img1 {
-                width: 80%;
+                width: 50%;
             }
 
             .s6-sc1 {
@@ -425,11 +438,7 @@
             }
 
             #s8-heading {
-                font-size: 24px;
-            }
-
-            #s9-heading1 {
-                font-size: 24px;
+                font-size: 20px;
             }
 
             .s9-c1 {
@@ -464,11 +473,15 @@
                         <h1 class="heading" id="s1-heading2">DESK</h1>
                     </div>
                     <div id="s1-par">
-                        <p>Growing is not only a destination but a journey 
-                            of constant evolution and learning aswe traverse the always changing environment of our chosen 
-                            field. We at Signpost India follow the philosophy that real growth comes from our capacity to 
-                            welcome change and never give up on our pursuit of excellence. Every advancement is a tribute 
-                            to our group's vision and fortitude, which are fostered by our never ending search for new and
+                        <p>Growing is not only a destination but a journey
+                            of constant evolution and learning aswe traverse the always changing environment of our
+                            chosen
+                            field. We at Signpost India follow the philosophy that real growth comes from our capacity
+                            to
+                            welcome change and never give up on our pursuit of excellence. Every advancement is a
+                            tribute
+                            to our group's vision and fortitude, which are fostered by our never ending search for new
+                            and
                             improved ideas.
                         </p>
                         <br>
@@ -497,7 +510,7 @@
             <div class="s3-c1">
                 <h1 class="heading" id="s3-heading">CAMPAIGNS THAT MAKE A MARK!</h1>
                 <div class="s3-sc1">
-                    <h3 class="s3-subheading" >Best Switch Bus</h3>
+                    <h3 class="s3-subheading">Best Switch Bus</h3>
                     <h3 class="s3-subheading">BQS</h3>
                     <h3 class="s3-subheading">Digital</h3>
                     <h3 class="s3-subheading">Metro Station</h3>
@@ -531,9 +544,9 @@
                 <img src="./asset/s6-img1.png" alt="s6-img1" id="s6-img1">
                 <div class="s6-sc1">
                     <p id="s6-para">Greece had always been my dream destination, and our 7-day adventure there was
-                        beyond anything I'd imagined. We kicked things off with a quick stopover in London (because 
-                        who can resist a bit of Big Ben and tea?). After a whirlwind London stay, we hopped on a plane 
-                        to Santorini, where those iconic blue-domed churches and whitewashed buildings greeted us like 
+                        beyond anything I'd imagined. We kicked things off with a quick stopover in London (because
+                        who can resist a bit of Big Ben and tea?). After a whirlwind London stay, we hopped on a plane
+                        to Santorini, where those iconic blue-domed churches and whitewashed buildings greeted us like
                         we'd arrived at a postcard photoshoot.
                         <br />
                         <br />
@@ -562,8 +575,10 @@
                         <br />
                         We wrapped up the trip flying back to Germany as a stopover, then home to Mumbai, already
                         scheming where to head next. Moral of the story? Keep traveling it's the cure for everything,
-                        including your need for a good story to tell. And to end this "Trips are the real life CTRL+ALT+DEL-
-                        <span id="s6-line">sometimes you just need to reboot in a new timezone." Ciao until a next adventure unfolds<span>
+                        including your need for a good story to tell. And to end this "Trips are the real life
+                        CTRL+ALT+DEL-
+                        <span id="s6-line">sometimes you just need to reboot in a new timezone." Ciao until a next
+                            adventure unfolds<span>
                     </p>
                 </div>
             </div>
@@ -618,7 +633,8 @@
                     <br />
                     <p class="s9-sh3">Thank you:</p>
                     <p class="s9-sh3">I am grateful for the opportunities and experiences I have gained at Signpost. The
-                        company's culture of growth, innovation, and collaboration has made it a truly rewarding place to work.
+                        company's culture of growth, innovation, and collaboration has made it a truly rewarding place
+                        to work.
                     </p>
                 </div>
 
