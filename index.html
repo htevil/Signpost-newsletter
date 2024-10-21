@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter</title>
+    <style type="text/css">
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            font-family: 'Roboto';
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 1.15;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: gray;
+        }
+
+        header {
+            width: 100%;
+            max-width: 700px;
+        }
+
+        #header_img {
+            width: 100%
+        }
+
+        main {
+            width: 100%;
+            max-width: 700px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: -5px;
+        }
+
+        section {
+            width: 100%;
+            padding: 20px 40px;
+        }
+
+        .heading {
+            font-size: 32px;
+            font-weight: 1000;
+            letter-spacing: 1px;
+            color: #AC045C;
+        }
+
+        .sub-heading {
+            font-size: 18px;
+        }
+
+        .s1-c1 {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 5px
+        }
+
+        #s1-img1 {
+            width: 45%;
+            min-width: 200px;
+        }
+
+        .s1-sc1 {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: center;
+            gap: 5px;
+            text-align: justify;
+        }
+
+        #s1-heading2 {
+            margin-top: 5px;
+            align-self: flex-start;
+            line-height: 0.8;
+        }
+
+        #s1-para {
+            width: 100%;
+            text-align: justify;
+        }
+
+        #line {
+            width: 70%;
+            height: 2px;
+            background-color: #AC045C;
+        }
+
+        #s2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #s2-heading {
+            font-size: 45px;
+        }
+
+        #s2-img1,
+        #s2-img2 {
+            width: 100%;
+        }
+
+        #s3 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #s3-heading {
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+
+        .s3-c1 {
+            width: 45%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .s3-c2 {
+            width: 55%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .s3-sc1 {
+            width: 100%;
+            height: 75%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: start;
+            gap: 25%;
+        }
+
+        .s3-subheading{
+            font-size: 18px;
+        }
+
+        #s3-img1,
+        #s3-img2 {
+            width: 100%;
+        }
+
+        #s4 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        #s4-img1 {
+            width: 100%;
+        }
+
+        #s4-img2 {
+            width: 100%;
+        }
+
+        #s5 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .s5-c1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-self: center;
+            gap: 10px;
+        }
+
+        .s5-sc1 {
+            width: 50%;
+        }
+
+        .s5-sc2 {
+            width: 40%;
+            align-content: center;
+        }
+
+        .s5-sc2 p {
+            width: 40%;
+        }
+
+        #s5-img1 {
+            width: 100%;
+        }
+
+        #s5-subheading2 {
+            width: 100%;
+            color: #AC045C;
+        }
+
+        #s6 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .s6-c1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+
+        #s6-img1 {
+            width: 40%;
+        }
+
+        .s6-sc1 {
+            width: 60%;
+            text-align: justify;
+        }
+
+        #s6-line {
+            color: #AC045C;
+            font-size: 13px;
+        }
+
+        #s7 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+
+        #s7-img1 {
+            width: 90%;
+        }
+
+        #s8 {
+            padding: 0px;
+        }
+
+        .s8-c1 {
+            background-color: #AC045C;
+            border-radius: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        #s8-heading {
+            color: white;
+        }
+
+        .s8-sc1 {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        #s8-img1 {
+            width: 100%;
+        }
+
+        #s8-para {
+            font-size: 12.5px;
+            font-weight: 500;
+            color: white;
+            text-align: justify;
+            line-height: 1.2;
+        }
+
+        #s9 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .s9-c1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+
+        #s9-img1 {
+            width: 45%;
+            align-self: flex-start;
+        }
+
+        #s9-para {
+            width: 60%;
+            text-align: justify;
+        }
+
+        .s9-sh1 {
+            font-size: 16px;
+            color: #AC045C;
+        }
+
+        .s9-sh2 {
+            font-size: 12px;
+            color: #AC045C;
+        }
+
+        .s9-sh3 {
+            font-size: 12.5px;
+            font-weight: 500;
+            color: #AC045C;
+        }
+
+        @media screen and (max-width: 470px) {
+            section {
+                padding: 20px;
+            }
+
+            #header_img{
+                width: 100%;
+            }
+
+            .s1-c1 {
+                flex-direction: column;
+            }
+
+            #s1-img1 {
+                width: 60%;
+            }
+
+            .s1-sc1 {
+                width: 80%;
+            }
+
+            #line{
+                margin-top: 5px;
+            }
+
+            #s3-heading {
+                font-size: 20px;
+            }
+
+            .s3-subheading{
+                font-size: 14px;
+            }
+
+            #s4-heading {
+                font-size: 24px;
+            }
+
+            #s5-heading {
+                font-size: 24px;
+            }
+
+            #s5-subheading1 {
+                font-size: 14px;
+            }
+
+            #s5-subheading2 {
+                font-size: 12px;
+            }
+
+            .s6-c1 {
+                flex-direction: column;
+            }
+
+            #s6-img1 {
+                width: 80%;
+            }
+
+            .s6-sc1 {
+                width: 80%;
+            }
+
+            .s8-c1 {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            #s8-heading {
+                font-size: 24px;
+            }
+
+            #s9-heading1 {
+                font-size: 24px;
+            }
+
+            .s9-c1 {
+                flex-direction: column;
+            }
+
+            #s9-img1 {
+                width: 50%;
+                align-self: center;
+            }
+
+            #s9-para {
+                width: 80%
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="./asset/hea_img1.png" alt="header_img" id="header_img">
+    </header>
+    <main>
+        <section id="s1">
+            <div class="s1-c1">
+                <img src="./asset/s1-img1.png" alt="s1-img1" id="s1-img1">
+                <div class="s1-sc1">
+                    <h1 class="heading" id="s1-heading2">DIRECTOR'S DESK</h1>
+                    <div id="s1-par">
+                        <p>
+                            Growing is not only a destination but a journey of constant evolution and learning as
+                            we traverse the always changing environment of our chosen field. We at Signpost India
+                            follow the philosophy that real growth comes from our capacity to welcome change and
+                            never give up on our pursuit of excellence. Every advancement is a tribute to our
+                            group's vision and fortitude, which are fostered by our never ending search for new and
+                            improved ideas.
+                        </p>
+                        <br>
+                        <p>
+                            Moving forward, we know our power comes not only from accomplishing our objectives but
+                            also from our mutual dedication to develop as a team, turn obstacles into opportunities,
+                            and create a bright, promising future. All hurdles we face along the way gives us the
+                            chance to push the boundaries and broaden our perspectives. Through these experiences,
+                            we not only develop individually but also fortify the core values of our organization.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div id="line">
+            </div>
+        </section>
+        <section id="s2">
+            <h1 class="heading" id="s2-heading">
+                INNOVATION CORNER
+            </h1>
+            <img src="./asset/s2-img1.png" alt="s2-img1" id="s2-img1">
+            <img src=".//asset/s2-img2.png" alt="s2-img2" id="s2-img2">
+        </section>
+        <section id="s3">
+            <div class="s3-c1">
+                <h1 class="heading" id="s3-heading">CAMPAIGNS THAT MAKE A MARK!</h1>
+                <div class="s3-sc1">
+                    <h3 class="s3-subheading" >Best Switch Bus</h3>
+                    <h3 class="s3-subheading">BQS</h3>
+                    <h3 class="s3-subheading">Digital</h3>
+                    <h3 class="s3-subheading">Metro Station</h3>
+                </div>
+            </div>
+            <div class="s3-c2">
+                <img src="./asset/s3-img1.png" alt="s3-img1" id="s3-img1">
+                <img src="./asset/s3-img2.png" alt="s3-img2" id="s3-img2">
+            </div>
+        </section>
+        <section id="s4">
+            <h1 class="heading" id="s4-heading">NEW CLIENTS ONBOARDED</h1>
+            <img src="./asset/s4-img1.png" alt="s4-img1" id="s4-img1">
+            <img src="./asset/s4-img2.png" alt="s4-img2" id="s4-img2">
+        </section>
+        <section id="s5">
+            <h1 class="heading" id="s5-heading">WELCOME ONBOARD</h1>
+            <div class="s5-c1">
+                <div class="s5-sc1">
+                    <img src=".//asset/s5-img1.png" alt="s5-img1" id="s5-img1">
+                </div>
+                <div class="s5-sc2">
+                    <h3 class="sub-heading" id="s5-subheading1">Chief Financial Officer</h3>
+                    <p id="s5-subheading2">Finance and Accounts</p>
+                </div>
+            </div>
+        </section>
+        <section id="s6">
+            <h1 class="heading">TRAILS OF DISCOVERY</h1>
+            <div class="s6-c1">
+                <img src="./asset/s6-img1.png" alt="s6-img1" id="s6-img1">
+                <div class="s6-sc1">
+                    <p id="s6-para">Greece had always been my dream destination, and our 7-day adventure there was
+                        beyond anything I'd imagined. We kicked things off with a quick stopover in London (because 
+                        who can resist a bit of Big Ben and tea?). After a whirlwind London stay, we hopped on a plane 
+                        to Santorini, where those iconic blue-domed churches and whitewashed buildings greeted us like 
+                        we'd arrived at a postcard photoshoot.
+                        <br />
+                        <br />
+                        Our hotel was so white and elegant, it felt like living inside a giant cloud-no complaints
+                        there. Oia's sunsets didn't just take our breath away, they practically slapped it out of us.
+                        And don't get me started on the seafood! Grilled octopus and seabass so fresh, I felt like we
+                        were dining with Poseidon himself.
+                        <br />
+                        <br />
+                        Next up, we sailed off on a luxury cruise to Naxos, which was like Santorini's laid-back
+                        cousin who skipped the tourist rush. We stumbled upon a hidden village called Halki, where we
+                        wandered around like kids in a maze, pretending to be art connoisseurs in local shops. Naxos had
+                        this serene, slow pace-perfect for digesting all that seafood.
+                        <br />
+                        <br />
+                        Then came los, the party island where sleep is apparently optional. After dancing until sunrise,
+                        we figured some beach time at Mylopotas Beach was the best way to recover. Between sunbathing
+                        and swimming, we debated how the Greeks managed to balance such wild nights with lazy,
+                        beautiful days.
+                        <br />
+                        <br />
+                        Finally, Athens. Ah, the Acropolis, the Parthenon-those ancient wonders made me reflect on how
+                        travel doesn't just ex y stretches your patience when you're scaling ruins in 30-degree heat.
+                        But worth it? 100%. (Also we are Mumbaikars, we really cant complain)
+                        <br />
+                        <br />
+                        We wrapped up the trip flying back to Germany as a stopover, then home to Mumbai, already
+                        scheming where to head next. Moral of the story? Keep traveling it's the cure for everything,
+                        including your need for a good story to tell. And to end this "Trips are the real life CTRL+ALT+DEL-
+                        <span id="s6-line">sometimes you just need to reboot in a new timezone." Ciao until a next adventure unfolds<span>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="s7">
+            <h1 class="heading">The SPOTLIGHT HONORS</h1>
+            <img src="./asset/s7-img1.png" alt="s7-img1" id="s7-img1">
+        </section>
+        <section id="s8">
+            <div class="s8-c1">
+                <h1 class="heading" id="s8-heading">TOGETHER FOR TOMORROW</h1>
+                <div class="s8-sc1">
+                    <img src="./asset/s8-img1.png" alt="s8-img1" id="s8-img1">
+                    <p id="s8-para">
+                        This Independence Day, we elevated our creativity with a Mug Painting Competition centered
+                        around the theme of Independence and Freedom. Our employees embraced the opportunity to
+                        express their unique perspectives on what freedom truly means.
+                        <br /><br />
+                        At Signpost, we believe in viewing the world through a different lens. To us, freedom embodies
+                        more than just independence it represents the power to think, create, and innovate without
+                        boundaries. We celebrate this spirit not only on Independence Day but every day as we strive to
+                        push the limits of creativity and innovation.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="s9">
+            <h1 class="heading" id="s9-heading1">REAL VOICES, REAL IMPACT</h1>
+            <div class="s9-c1">
+                <img src="./asset/s9-img1.png" alt="s9-c1" id="s9-img1">
+                <div id="s9-para">
+                    <h3 class="s9-sh1">Amar Nadgeri</h3>
+                    <br />
+                    <p class="s9-sh2">What I Enjoy Most:</p>
+                    <p>Working at Signpost has been an incredibly rewarding experience. I've had the privilege of being
+                        involved in challenging and innovative projects that have pushed me to grow both personally and
+                        professionally. Each project brings new opportunities to learn and explore emerging
+                        technologies, keeping me on the cutting edge of the DOOH industry.</p>
+                    <br />
+                    <p class="s9-sh2">Memorable Experiences:</p>
+                    <p>One of my most memorable experiences was working on the Airtel 3G campaign in 2013. This project
+                        involved a massive undertaking to plan and execute the communication channels across national
+                        and state highways, as well as in urban and rural areas of Maharashtra. The challenges I faced
+                        during this campaign taught me the importance of staying calm under pressure and effectively
+                        managing large-scale projects with limited resources.</p>
+                    <br />
+                    <p class="s9-sh2">Personal and Professional Growth:</p>
+                    <p>Signpost has played a crucial role in my professional development. From my early days as a simple
+                        employee to becoming a recognized DOOH expert, the company has provided me with countless
+                        opportunities to learn and grow. The company's emphasis on innovation and adaptation has helped
+                        me stay relevant and competitive in the ever-evolving DOOH industry.</p>
+                    <br />
+                    <p class="s9-sh3">Thank you:</p>
+                    <p class="s9-sh3">I am grateful for the opportunities and experiences I have gained at Signpost. The
+                        company's
+                        culture of growth, innovation, and collaboration has made it a truly rewarding place to work.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+</body>
+
+</html>
